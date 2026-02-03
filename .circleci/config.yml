@@ -14,7 +14,7 @@ jobs:
             echo $version
             docker build -t ni3devops/todo-app:$version .
             echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-            docker push chandikas/todo-app:$version
+            docker push ni3devops/todo-app:$version
 
   Update_manifest:
     docker:
